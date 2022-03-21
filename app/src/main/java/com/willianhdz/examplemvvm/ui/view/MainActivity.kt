@@ -7,7 +7,9 @@ import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.willianhdz.examplemvvm.databinding.ActivityMainBinding
 import com.willianhdz.examplemvvm.ui.viewmodel.QuoteViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint // con esta declaracion la clase ya esta preparada para recibir una injection
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
